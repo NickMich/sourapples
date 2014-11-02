@@ -15,9 +15,9 @@ Installation
 -----
 
 ```sh
-git clone git@github.com:NickMich/sourapples.git sourapples
-cd sourapples
-python setup.py install
+$ git clone git@github.com:NickMich/sourapples.git sourapples
+$ cd sourapples
+$ python setup.py install
 
 ```
 
@@ -35,7 +35,7 @@ $
 ##### Command line options
 
 * [-f|--file] - Required - The input .m4a file to read information from
-* [-r|--rename] - Optional - A flag indicating if you want to rename the file from the four-character format to Artist_Album_Tile.m4a
+* [-r|--rename] - Optional - A flag indicating if you want to rename the file from the four-character format to Artist_Album_Title.m4a
 
 ##### Example
 ```sh
