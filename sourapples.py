@@ -74,9 +74,12 @@ def main():
 
     if args.rename :
         new_base_name = "_".join([artist,album,title])
-        to_dir = os.path.dirname(in_file)
+        to_dir = os.path.dirname(in_file) 
+        if to_dir == "":
+            to_dir = "."
         fname, to_ext = os.path.splitext(in_file)
         out_file = to_dir + "/" + new_base_name + to_ext
+        print "[*] Renaming %s to %s" %(in_file,out_file)
         os.rename(in_file, out_file)
 
 	    
